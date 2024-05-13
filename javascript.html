@@ -1,0 +1,191 @@
+<html>
+
+
+
+<head>
+
+
+
+ <title>Order Details</title>
+
+
+
+
+
+ <style>
+
+   
+
+
+
+  body {
+
+
+
+    background: linear-gradient(#fc6ca8, #FC8EAC, #FFC1CC, #FFD1DC);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+
+
+
+  }
+
+
+
+  .container {
+
+
+
+   background-color: transparent;
+
+   padding: 20px;
+
+   border-radius: 10px;
+
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+   text-align: left; 
+
+
+
+  }
+
+
+
+  p{
+
+    font-family: Copperplate, monospace;
+
+  }
+
+
+
+  h1, b{
+
+    font-family: Copperplate, monospace;
+
+    color: #bb0249;
+
+  }
+
+  button {
+
+   background-color: #ff81cf;
+
+   border-style: groove;
+
+   border-color: #f7a4c3;
+
+   color: white;
+
+   padding: 5px 8px;
+
+   display: inline-block;
+
+   font-size: 16px;
+
+   margin: 0px auto; 
+
+   cursor: pointer;
+
+   border-radius: 5px;
+
+
+
+  }
+
+
+
+  button:hover {
+
+   background-color: #ff0062;
+
+  }
+
+
+
+ </style>
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+<div class="container">
+
+
+
+ <script language="JavaScript">
+
+
+
+
+
+  var itemName = prompt("Enter Name of Item: ");
+
+  var price = parseFloat(prompt("Enter Price: "));
+
+  var quantity = parseInt(prompt("Quantity: "));
+
+  var discount = parseFloat(prompt("Enter Percentage Discount: "));
+
+
+
+
+
+  var totalAmount = price * quantity * (1 - discount / 100);
+
+
+
+
+
+  document.write("<h1>ORDER DETAILS:</h1> <hr>");
+
+  document.write("<p><b>Item: </b> " + itemName + "</p>");
+
+  document.write("<p><b>Price: </b> " + price + " pesos</p>");
+
+  document.write("<p><b>Quantity: </b>" + quantity + " pc/s</p>");
+
+  document.write("<p><b>Discount: </b> " + discount + "% OFF</p>");
+
+  document.write("<hr><p><b>Total Amount: PHP " + totalAmount + " pesos</b></p>");
+
+
+
+  
+
+</script>
+
+<button type="button" xx="alert('Thank you for purchasing!')">Exit</button> 
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+</html>
